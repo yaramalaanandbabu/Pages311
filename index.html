@@ -1,0 +1,183 @@
+<DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+</head>
+    <body>
+    <div class="paral">
+    <p style="font-size: 20">data, collected from several sources, inside and outside the organization, which is available to end users to be used in the context
+        of the organization.</p>
+        <p style="font-size: 25"><b>Data Mart</b></p>
+        <p style="font-size: 20">is a smaller version of a data-warehouse, containing data related
+to a certain functional area of the company.</p>
+        <p style="font-size: 25"><b>Data Mining</b></p>
+        <p style="font-size: 20">is the process of extracting valid, unknown and wide ranging data
+from a data-warehouse, making it possible to organize new deci sion-making processes.<br>Some typical questions that can be answered through data mining are:<br>
+<br>a. “Who are my most important clients and what are their buying habits or
+behaviors?”<br>
+b. “How should I optimize my store layout to increase profit?”<br>
+c. “What is the composition of products in the market basket or market cart
+preferred by a certain type of client?”<br>
+d. “Who commits fraud and how can I recognize it?”<br><br>Main business drivers for the application of date mining are:<br><br>a. Saturated markets where it is difficult to find the right clients for the
+company’s product or the right product for its clients;<br>
+b. Imprecise borders of industrial activities, since we can find the industry
+from branch A (automotive, aviation, etc.) acting in branch B (services,
+tourism) or C (foods, soft drinks) due to the occurrence of acquisitions or
+mergers of companies;<br>
+c. Lack of a clear definition to detect the type of client that the company or
+the competing company would like to serve;<br>
+d. Rapid expansion of alternative marketing channels, such as e-business;
+and<br>e. Competitive market which requires a variety of products with a shorter life
+cycle.<br><br>Advantages of using data mining are:<br><br>• with the aid of adequate software and a sufficient number of parameters
+to guide the investigation, the computer does all the work;<br>
+• the computer is not influenced by preconceived user notions about
+possible relationships existing in the examined database. The computer
+can discover unexpected relationships, some of which can be of great
+utility.<br><br>Some disadvantages of data mining are:<br><br>• the exploratory search through many gigabytes or terabytes of data can be
+a heavy load for even the most powerful (and most expensive) computers.
+Thus, an attempt to apply data mining is not recommended for small
+computers, except in very specific cases;<br>
+• in general an enormous number of irrelevant relationships are found,
+compared to the modest amount of “useful” information;<br>
+• it is not easy to identify a useful relationship among the mass of irrelevant
+relationships, since it is not easy to gauge the utility of data or relationships.<br><br>
+The main areas of application for data mining are listed in Table 12.3.<br><br>
+            <i>Table 12.3. Data mining application areas (adapted from IBM, 1999)<br>
+</i>
+</p>
+        <div class="paral">
+        <center>
+          <img style="width:500px;height:350px;" src="a1.png">  
+            </center>
+        
+        
+        </div>
+        <h1 Style="text-align: center; font-size: 35;"><center>Market Basket Analysis:<br>
+Mining Association Rules</center></h1>
+        <hr class="h">
+        <style>
+            .h{
+                width: 100%;
+                height: 7px;
+                border: 0 none;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                background-color: black;
+            }
+            h1{
+                color: black;
+                font-family: aller;
+                font-size: 45px;
+            }
+        </style>
+        <p style="font-size: 20">The term “market basket analysis,” used to designate the algorithm to find new
+association rules, has its origin in the problem classifying customers according
+to the contents of their market basket or cart.</p>
+        <h1 Style="text-align: center; font-size: 35;">A Medical Exam Data Set</h1>
+        <hr class="h">
+        <style>
+            .h{
+                width: 100%;
+                height: 7px;
+                border: 0 none;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                background-color: black;
+            }
+            h1{
+                color: black;
+                font-family: aller;
+                font-size: 45px;
+            }
+        </style>
+        <p style="font-size: 20">Let’s analyze a set of data of Table 12.4, corresponding to the results of 14
+medical exams reporting the occurrence or nonoccurrence of a certain disease.
+The data are fictitious and serve only to illustrate the application of the data<br><br><i>Table 12.4. A medical examination dataset (adapted from Witten &
+Frank, 2000)
+</i></p>
+        <div class="paral">
+        <center>
+          <img style="width:450px;height:650px;" src="a2.png">  
+            </center>
+        
+        
+        </div>
+        <p style="font-size: 20">mining technique. The calculation of the numerical results is based on THE
+            WEATHER PROBLEM application presented by Witten and Frank (2000).</p>
+        <h1 Style="text-align: left; font-size: 35;"><i>Item Sets</i></h1>
+        <hr class="h">
+        <style>
+            .h{
+                width: 100%;
+                height: 2px;
+                border: 0 none;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                background-color: black;
+            }
+            h1{
+                color: black;
+                font-family: aller;
+                font-size: 25px;
+            }
+        </style>
+        <p style="font-size: 20">The two-items set (sex = male, age = 25 or less) appears inside rules 1, 2, 3
+and 4, and then its number of occurrences is 4. Other two-item sets are:<br><br><center>(male, 25 ~45) occurring twice, (female , weight = 170 or more)
+            occurring 3 times, and so on.</center><br><br>Other examples of item sets are:<br><br>Three- items sets<br><br><center>(male, 25 or less, 110 ~170 pounds) occurs 3 times, while
+(female, 25 or less, 110 pounds or less) occurs only once.</center><br><br>Four-items sets<br><br><center>(sex = male, age = 25 or less, weight = 110 ~170, cholesterol =
+normal) occurs twice, and
+(sex = female, fat = high, cholesterol = normal, disease = no) occurs
+twice.<br><br></center>Five-items sets<br><br><center>(male, 25 years or less, 110 ~170 pounds, fat = normal, disease = no);
+(male, 110 pounds or less, fat = high, cholesterol = high, disease = yes);
+(female, 170 pounds or more, fat = normal, cholesterol = high, disease
+= yes); and<br>( 45 years or more, 110 ~170 pounds, fat = high, cholesterol = high,
+disease = yes) occur twice each.
+</center>
+<h1 Style="text-align: left; font-size: 35;"><i>Generating Association Rules and their Accuracy</i></h1>
+        <hr class="h">
+        <style>
+            .h{
+                width: 100%;
+                height: 2px;
+                border: 0 none;
+                margin-right: auto;
+                margin-left: auto;
+                margin-top: 0px;
+                margin-bottom: 0px;
+                background-color: black;
+            }
+            h1{
+                color: black;
+                font-family: aller;
+                font-size: 25px;
+            }
+        </style>
+        The second step of the data-mining technique asks us to generate association
+rules and calculate the corresponding accuracy index. For example, the fouritems set<br><br><center>(male, 25 years or less, 110 ~170 pounds, fat = normal, disease = no)<br>
+occurs twice and leads to the following potential rules:</center><br><br>The one-term antecedent rule:<br><br><center>“if (sex = male) then (age = 25 years or less and weight=110 ~ 170
+pounds and fat = normal and disease = no),<br>
+has the antecedent (sex = male) observed in 8 rules of the dataset , then
+accuracy of this rule is 2/8 or 25%;<br><br></center>The two-terms antecedent rule:
+<br><br><center>“if (sex = male and age = 25 years or less) then (weight = 110 ~170
+pounds and fat = normal and disease = no),<br>
+ has the antecedent (sex = male and age = 25 years or less) observed
+in 4 rules of the data set, then the accuracy will increase to 2/4 or 50%,
+and in the rule<br><br></center>The three-terms antecedent rule:
+<br><br><center>“if (sex = male and age = 25 years or less and weight = 110 ~170
+pounds) then (fat = normal and disease = no),<br>
+ has the antecedent (sex = male and age = 25 years or less and weight
+= 110 ~170 pounds) observed in 3 rules of the data set, then the
+accuracy is 2/3 or 66.7%.
+</center>
+        </div>
+        
+    </body>
+    </html>
